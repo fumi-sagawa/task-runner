@@ -1,0 +1,12 @@
+@mixin mq-up($breakpoint: md) {
+  //メインで使用するブレイクポイントを指定
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+@mixin mq-down($breakpoint: md) {
+  //メインで使用するブレイクポイントを指定
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}

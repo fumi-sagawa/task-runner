@@ -1,5 +1,7 @@
-@use './foundation/_define' as *;
-@use './foundation/_reset' as *;
+//変数の一括インポート
+@use "global" as *;
+@use "foundation";
+@use "component";
 
 h1 {
   color: $color-main;

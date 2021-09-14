@@ -15,22 +15,33 @@ module.exports = {
         use: [
           {
             // Babel を利用する
-            loader: 'babel-loader',
+            loader: "babel-loader",
+
             // Babel のオプションを指定する
             options: {
               presets: [
                 // プリセットを指定することで、ES2020 を ES5 に変換
-                '@babel/preset-env',
-              ]
-            }
-          }
-        ]
-      }
-    ]
+                "@babel/preset-env",
+              ],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { url: false },
+          },
+        ],
+      },
+    ],
   },
 
   // 出力ファイル
   output: {
-    filename: "script.js"
-  }
-}
+    filename: "script.js",
+  },
+};

@@ -2,7 +2,8 @@
 @use "global" as *;
 @use "foundation";
 @use "component";
-
-h1 {
-  color: $color-main;
-}
+@use "project";
+@use "utility";
+// h1 {
+//   color: $color-main;
+// }

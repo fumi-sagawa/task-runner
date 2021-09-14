@@ -1,0 +1,24 @@
+// margin-top:0px ~ margin-top:100px
+@for $i from 0 through 100 {
+  .u-mt#{$i * 5} {
+    margin-top: #{$i * 5}px;
+  }
+}
+// margin-bottom:0px ~ margin-bottom:100px
+@for $i from 0 through 100 {
+  .u-mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px;
+  }
+}
+// margin-left:0px ~ margin-left:100px
+@for $i from 0 through 100 {
+  .u-ml#{$i * 5} {
+    margin-left: #{$i * 5}px;
+  }
+}
+// margin-right:0px ~ margin-right:100px
+@for $i from 0 through 100 {
+  .u-mr#{$i * 5} {
+    margin-right: #{$i * 5}px;
+  }
+}

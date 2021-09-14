@@ -1,0 +1,34 @@
+@use 'global' as *;
+
+.c-ctaButton {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px 23px 17px;
+  background-color: $color-red;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba($color: #d10042, $alpha: 0.2);
+  &__sub {
+    line-height: 1;
+    padding: 5px 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: rem(10px);
+    color: $color-red;
+  }
+  &__main {
+    line-height: 1;
+    font-size: rem(20px);
+    font-weight: 600;
+    color: #fff;
+  }
+  position: relative;
+  &::after {
+    content: url(../img/link_arrow.svg);
+    position: absolute;
+    top: 50.5%;
+    right: 9px;
+    transform: translate(-50%, -50%);
+  }
+}

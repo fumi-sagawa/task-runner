@@ -1,0 +1,60 @@
+@use 'global' as *;
+
+.p-attraction {
+  padding: 43px 24px 0 24px;
+  &__inner {
+    display: grid;
+    row-gap: 53px;
+  }
+  &__card {
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba($color: #1562b2, $alpha: 0.16);
+    position: relative;
+    span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70px;
+      height: 69px;
+      border-radius: 100px;
+      //以下数字のプロパティ
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem(20px);
+      font-weight: 600;
+      color: #fff;
+      background-color: $color-blue;
+      box-shadow: 0 3px 6px rgba($color: #1562b2, $alpha: 0.41);
+    }
+    h3 {
+      font-size: rem(24px);
+      font-weight: 600;
+      color: $color-blue;
+      text-align: center;
+      padding: 63px 10px 0 10px;
+    }
+    p {
+      font-size: rem(14px);
+      line-height: calc(24 / 14);
+      color: #607b80;
+      padding: 0 30px 45px;
+    }
+    &.--v1 {
+      img {
+        padding: 32px 40px 14px;
+      }
+    }
+    &.--v2 {
+      img {
+        padding: 20px 50px 20px;
+      }
+    }
+    &.--v3 {
+      img {
+        padding: 18px 68px 25px;
+      }
+    }
+  }
+}

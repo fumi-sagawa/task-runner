@@ -175,6 +175,16 @@ select {
 }
 
 html {
-  font-size: $font;
+  // font-size: $size;
+  // font-size: 62.5% !important;
   font-family: $font;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+// h1 {
+//   color: red !important;
+// }

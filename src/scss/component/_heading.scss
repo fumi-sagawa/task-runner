@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+.c-heading {
+  display: flex;
+  justify-content: center;
+  font-size: rem(24px);
+  font-weight: 600;
+  line-height: 1;
+  color: $color-mainText;
+  padding-bottom: 16px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 4px;
+    bottom: 0px;
+    right: 50%;
+    border-radius: 100px 0 0 100px;
+    background-color: #f6ca06;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 4px;
+    bottom: 0px;
+    left: 50%;
+    border-radius: 0 100px 100px 0;
+    background-color: #135da7;
+  }
+}
